@@ -2,6 +2,7 @@ package com.speedment.example.webinar.db.sakila.sakila.film.generated;
 
 import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.example.webinar.db.sakila.sakila.film.Film;
+import com.speedment.example.webinar.db.sakila.sakila.film.generated.GeneratedFilm.Rating;
 import com.speedment.example.webinar.db.sakila.sakila.language.Language;
 import com.speedment.runtime.core.manager.Manager;
 import com.speedment.runtime.core.util.OptionalUtil;
@@ -35,7 +36,7 @@ public abstract class GeneratedFilmImpl implements Film {
     private BigDecimal rentalRate;
     private Integer length;
     private BigDecimal replacementCost;
-    private String rating;
+    private Rating rating;
     private String specialFeatures;
     private Timestamp lastUpdate;
     
@@ -94,7 +95,7 @@ public abstract class GeneratedFilmImpl implements Film {
     }
     
     @Override
-    public Optional<String> getRating() {
+    public Optional<Rating> getRating() {
         return Optional.ofNullable(rating);
     }
     
@@ -169,7 +170,7 @@ public abstract class GeneratedFilmImpl implements Film {
     }
     
     @Override
-    public Film setRating(String rating) {
+    public Film setRating(Rating rating) {
         this.rating = rating;
         return this;
     }

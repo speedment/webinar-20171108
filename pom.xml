@@ -38,6 +38,12 @@
                 <groupId>com.speedment</groupId>
                 <artifactId>speedment-maven-plugin</artifactId>
                 <version>${speedment.version}</version>
+
+                <configuration>
+                    <components>
+                        <component>com.speedment.plugins.enums.EnumGeneratorBundle</component>
+                    </components>
+                </configuration>
             </plugin>
         </plugins>
     </build>

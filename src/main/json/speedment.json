@@ -15,10 +15,10 @@
           {
             "tables" : [
               {
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "actor_id",
                     "id" : "actor_id",
                     "ordinalPosition" : 1
@@ -32,7 +32,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "actor_id",
                         "id" : "actor_id",
                         "ordinalPosition" : 1
@@ -48,7 +48,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "last_name",
                         "id" : "last_name",
                         "ordinalPosition" : 1
@@ -63,7 +63,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "actor_id",
@@ -73,7 +73,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "first_name",
                     "id" : "first_name",
@@ -82,7 +82,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_name",
                     "id" : "last_name",
@@ -91,7 +91,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -111,7 +111,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "city_id",
                         "foreignColumnName" : "city_id",
                         "id" : "city_id",
@@ -124,10 +124,10 @@
                     "enabled" : true
                   }
                 ],
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "address_id",
                     "id" : "address_id",
                     "ordinalPosition" : 1
@@ -141,7 +141,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "address_id",
                         "id" : "address_id",
                         "ordinalPosition" : 1
@@ -157,7 +157,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "city_id",
                         "id" : "city_id",
                         "ordinalPosition" : 1
@@ -172,7 +172,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "address_id",
@@ -182,7 +182,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "address",
                     "id" : "address",
@@ -191,7 +191,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "address2",
                     "id" : "address2",
@@ -200,7 +200,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "district",
                     "id" : "district",
@@ -210,7 +210,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "city_id",
                     "id" : "city_id",
@@ -219,7 +219,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "postal_code",
                     "id" : "postal_code",
@@ -228,7 +228,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "phone",
                     "id" : "phone",
@@ -237,7 +237,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -250,10 +250,10 @@
                 "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "category_id",
                     "id" : "category_id",
                     "ordinalPosition" : 1
@@ -267,7 +267,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "category_id",
                         "id" : "category_id",
                         "ordinalPosition" : 1
@@ -282,7 +282,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "category_id",
@@ -292,7 +292,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "name",
                     "id" : "name",
@@ -301,7 +301,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -321,7 +321,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "country_id",
                         "foreignColumnName" : "country_id",
                         "id" : "country_id",
@@ -333,10 +333,10 @@
                     "id" : "fk_city_country"
                   }
                 ],
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "city_id",
                     "id" : "city_id",
                     "ordinalPosition" : 1
@@ -350,7 +350,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "city_id",
                         "id" : "city_id",
                         "ordinalPosition" : 1
@@ -365,7 +365,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "country_id",
                         "id" : "country_id",
                         "ordinalPosition" : 1
@@ -379,7 +379,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "city_id",
@@ -389,7 +389,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "city",
                     "id" : "city",
@@ -399,7 +399,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "country_id",
                     "id" : "country_id",
@@ -408,7 +408,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -420,10 +420,10 @@
                 "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "country_id",
                     "id" : "country_id",
                     "ordinalPosition" : 1
@@ -437,7 +437,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "country_id",
                         "id" : "country_id",
                         "ordinalPosition" : 1
@@ -451,7 +451,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "country_id",
@@ -460,7 +460,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "country",
                     "id" : "country",
@@ -468,7 +468,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -476,7 +476,8 @@
                   }
                 ],
                 "name" : "country",
-                "id" : "country"
+                "id" : "country",
+                "enabled" : true
               },
               {
                 "foreignKeys" : [
@@ -486,7 +487,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "address_id",
                         "foreignColumnName" : "address_id",
                         "id" : "address_id",
@@ -503,7 +504,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "store_id",
                         "foreignColumnName" : "store_id",
                         "id" : "store_id",
@@ -515,10 +516,10 @@
                     "id" : "fk_customer_store"
                   }
                 ],
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "customer_id",
                     "id" : "customer_id",
                     "ordinalPosition" : 1
@@ -532,7 +533,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "customer_id",
                         "id" : "customer_id",
                         "ordinalPosition" : 1
@@ -547,7 +548,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "address_id",
                         "id" : "address_id",
                         "ordinalPosition" : 1
@@ -562,7 +563,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "store_id",
                         "id" : "store_id",
                         "ordinalPosition" : 1
@@ -577,7 +578,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "last_name",
                         "id" : "last_name",
                         "ordinalPosition" : 1
@@ -591,7 +592,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "customer_id",
@@ -601,7 +602,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "store_id",
                     "id" : "store_id",
@@ -609,7 +610,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "first_name",
                     "id" : "first_name",
@@ -617,7 +618,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_name",
                     "id" : "last_name",
@@ -625,7 +626,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "email",
                     "id" : "email",
@@ -634,7 +635,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "address_id",
                     "id" : "address_id",
@@ -643,7 +644,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "active",
                     "id" : "active",
@@ -651,7 +652,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "create_date",
                     "id" : "create_date",
@@ -659,7 +660,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -667,7 +668,8 @@
                   }
                 ],
                 "name" : "customer",
-                "id" : "customer"
+                "id" : "customer",
+                "enabled" : true
               },
               {
                 "foreignKeys" : [
@@ -677,7 +679,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "language_id",
                         "foreignColumnName" : "language_id",
                         "id" : "language_id",
@@ -686,7 +688,8 @@
                       }
                     ],
                     "name" : "fk_film_language",
-                    "id" : "fk_film_language"
+                    "id" : "fk_film_language",
+                    "enabled" : true
                   },
                   {
                     "expanded" : false,
@@ -694,7 +697,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "original_language_id",
                         "foreignColumnName" : "language_id",
                         "id" : "original_language_id",
@@ -703,13 +706,14 @@
                       }
                     ],
                     "name" : "fk_film_language_original",
-                    "id" : "fk_film_language_original"
+                    "id" : "fk_film_language_original",
+                    "enabled" : true
                   }
                 ],
                 "expanded" : true,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "film_id",
                     "id" : "film_id",
                     "ordinalPosition" : 1
@@ -723,13 +727,14 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "film_id",
                         "id" : "film_id",
                         "ordinalPosition" : 1
                       }
                     ],
-                    "id" : "PRIMARY"
+                    "id" : "PRIMARY",
+                    "enabled" : true
                   },
                   {
                     "expanded" : false,
@@ -738,13 +743,14 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "language_id",
                         "id" : "language_id",
                         "ordinalPosition" : 1
                       }
                     ],
-                    "id" : "idx_fk_language_id"
+                    "id" : "idx_fk_language_id",
+                    "enabled" : true
                   },
                   {
                     "expanded" : false,
@@ -753,13 +759,14 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "original_language_id",
                         "id" : "original_language_id",
                         "ordinalPosition" : 1
                       }
                     ],
-                    "id" : "idx_fk_original_language_id"
+                    "id" : "idx_fk_original_language_id",
+                    "enabled" : true
                   },
                   {
                     "expanded" : false,
@@ -768,13 +775,14 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "title",
                         "id" : "title",
                         "ordinalPosition" : 1
                       }
                     ],
-                    "id" : "idx_title"
+                    "id" : "idx_title",
+                    "enabled" : true
                   }
                 ],
                 "isView" : false,
@@ -782,115 +790,132 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "film_id",
                     "id" : "film_id",
-                    "ordinalPosition" : 1
+                    "ordinalPosition" : 1,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "title",
                     "id" : "title",
-                    "ordinalPosition" : 2
+                    "ordinalPosition" : 2,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "description",
                     "id" : "description",
-                    "ordinalPosition" : 3
+                    "ordinalPosition" : 3,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.sql.Date",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "release_year",
                     "id" : "release_year",
-                    "ordinalPosition" : 4
+                    "ordinalPosition" : 4,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "language_id",
                     "id" : "language_id",
-                    "ordinalPosition" : 5
+                    "ordinalPosition" : 5,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.lang.Short",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "original_language_id",
                     "id" : "original_language_id",
-                    "ordinalPosition" : 6
+                    "ordinalPosition" : 6,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "rental_duration",
                     "id" : "rental_duration",
-                    "ordinalPosition" : 7
+                    "ordinalPosition" : 7,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.math.BigDecimal",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "rental_rate",
                     "id" : "rental_rate",
-                    "ordinalPosition" : 8
+                    "ordinalPosition" : 8,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.lang.Integer",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "length",
                     "id" : "length",
-                    "ordinalPosition" : 9
+                    "ordinalPosition" : 9,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.math.BigDecimal",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "replacement_cost",
                     "id" : "replacement_cost",
-                    "ordinalPosition" : 10
+                    "ordinalPosition" : 10,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
+                    "typeMapper" : "com.speedment.plugins.enums.StringToEnumTypeMapper",
                     "nullable" : true,
                     "enumConstants" : "G,PG,PG-13,R,NC-17",
+                    "autoIncrement" : false,
                     "name" : "rating",
+                    "nullableImplementation" : "OPTIONAL",
                     "id" : "rating",
-                    "ordinalPosition" : 11
+                    "ordinalPosition" : 11,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "special_features",
                     "id" : "special_features",
-                    "ordinalPosition" : 12
+                    "ordinalPosition" : 12,
+                    "enabled" : true
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
-                    "ordinalPosition" : 13
+                    "ordinalPosition" : 13,
+                    "enabled" : true
                   }
                 ],
                 "name" : "film",
-                "id" : "film"
+                "id" : "film",
+                "enabled" : true
               },
               {
                 "foreignKeys" : [
@@ -900,7 +925,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "actor_id",
                         "foreignColumnName" : "actor_id",
                         "id" : "actor_id",
@@ -917,7 +942,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "film_id",
                         "foreignColumnName" : "film_id",
                         "id" : "film_id",
@@ -929,16 +954,16 @@
                     "id" : "fk_film_actor_film"
                   }
                 ],
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "actor_id",
                     "id" : "actor_id",
                     "ordinalPosition" : 1
                   },
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "film_id",
                     "id" : "film_id",
                     "ordinalPosition" : 2
@@ -952,14 +977,14 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "actor_id",
                         "id" : "actor_id",
                         "ordinalPosition" : 1
                       },
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "film_id",
                         "id" : "film_id",
                         "ordinalPosition" : 2
@@ -974,7 +999,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "film_id",
                         "id" : "film_id",
                         "ordinalPosition" : 1
@@ -988,7 +1013,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "actor_id",
                     "id" : "actor_id",
@@ -997,7 +1022,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "film_id",
                     "id" : "film_id",
@@ -1005,7 +1030,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -1013,7 +1038,8 @@
                   }
                 ],
                 "name" : "film_actor",
-                "id" : "film_actor"
+                "id" : "film_actor",
+                "enabled" : true
               },
               {
                 "foreignKeys" : [
@@ -1023,7 +1049,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "category_id",
                         "foreignColumnName" : "category_id",
                         "id" : "category_id",
@@ -1040,7 +1066,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "film_id",
                         "foreignColumnName" : "film_id",
                         "id" : "film_id",
@@ -1052,16 +1078,16 @@
                     "id" : "fk_film_category_film"
                   }
                 ],
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "category_id",
                     "id" : "category_id",
                     "ordinalPosition" : 2
                   },
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "film_id",
                     "id" : "film_id",
                     "ordinalPosition" : 1
@@ -1075,14 +1101,14 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "film_id",
                         "id" : "film_id",
                         "ordinalPosition" : 1
                       },
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "category_id",
                         "id" : "category_id",
                         "ordinalPosition" : 2
@@ -1097,7 +1123,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "category_id",
                         "id" : "category_id",
                         "ordinalPosition" : 1
@@ -1111,7 +1137,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "film_id",
                     "id" : "film_id",
@@ -1120,7 +1146,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "category_id",
                     "id" : "category_id",
@@ -1128,7 +1154,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -1136,13 +1162,14 @@
                   }
                 ],
                 "name" : "film_category",
-                "id" : "film_category"
+                "id" : "film_category",
+                "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "film_id",
                     "id" : "film_id",
                     "ordinalPosition" : 1
@@ -1156,7 +1183,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "film_id",
                         "id" : "film_id",
                         "ordinalPosition" : 1
@@ -1171,14 +1198,14 @@
                     "indexColumns" : [
                       {
                         "orderType" : "NONE",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "title",
                         "id" : "title",
                         "ordinalPosition" : 1
                       },
                       {
                         "orderType" : "NONE",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "description",
                         "id" : "description",
                         "ordinalPosition" : 2
@@ -1192,7 +1219,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "film_id",
                     "id" : "film_id",
@@ -1200,7 +1227,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "title",
                     "id" : "title",
@@ -1208,7 +1235,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "description",
                     "id" : "description",
@@ -1216,7 +1243,8 @@
                   }
                 ],
                 "name" : "film_text",
-                "id" : "film_text"
+                "id" : "film_text",
+                "enabled" : true
               },
               {
                 "foreignKeys" : [
@@ -1226,7 +1254,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "film_id",
                         "foreignColumnName" : "film_id",
                         "id" : "film_id",
@@ -1243,7 +1271,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "store_id",
                         "foreignColumnName" : "store_id",
                         "id" : "store_id",
@@ -1255,10 +1283,10 @@
                     "id" : "fk_inventory_store"
                   }
                 ],
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "inventory_id",
                     "id" : "inventory_id",
                     "ordinalPosition" : 1
@@ -1272,7 +1300,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "inventory_id",
                         "id" : "inventory_id",
                         "ordinalPosition" : 1
@@ -1287,7 +1315,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "film_id",
                         "id" : "film_id",
                         "ordinalPosition" : 1
@@ -1302,14 +1330,14 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "store_id",
                         "id" : "store_id",
                         "ordinalPosition" : 1
                       },
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "film_id",
                         "id" : "film_id",
                         "ordinalPosition" : 2
@@ -1323,7 +1351,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "inventory_id",
@@ -1333,7 +1361,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "film_id",
                     "id" : "film_id",
@@ -1342,7 +1370,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "store_id",
                     "id" : "store_id",
@@ -1350,7 +1378,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -1358,13 +1386,14 @@
                   }
                 ],
                 "name" : "inventory",
-                "id" : "inventory"
+                "id" : "inventory",
+                "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "language_id",
                     "id" : "language_id",
                     "ordinalPosition" : 1
@@ -1378,7 +1407,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "language_id",
                         "id" : "language_id",
                         "ordinalPosition" : 1
@@ -1392,7 +1421,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "language_id",
@@ -1401,7 +1430,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "name",
                     "id" : "name",
@@ -1409,7 +1438,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -1417,7 +1446,8 @@
                   }
                 ],
                 "name" : "language",
-                "id" : "language"
+                "id" : "language",
+                "enabled" : true
               },
               {
                 "foreignKeys" : [
@@ -1427,7 +1457,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "customer_id",
                         "foreignColumnName" : "customer_id",
                         "id" : "customer_id",
@@ -1444,7 +1474,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "rental_id",
                         "foreignColumnName" : "rental_id",
                         "id" : "rental_id",
@@ -1461,7 +1491,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "staff_id",
                         "foreignColumnName" : "staff_id",
                         "id" : "staff_id",
@@ -1473,10 +1503,10 @@
                     "id" : "fk_payment_staff"
                   }
                 ],
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "payment_id",
                     "id" : "payment_id",
                     "ordinalPosition" : 1
@@ -1490,7 +1520,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "payment_id",
                         "id" : "payment_id",
                         "ordinalPosition" : 1
@@ -1505,7 +1535,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "rental_id",
                         "id" : "rental_id",
                         "ordinalPosition" : 1
@@ -1520,7 +1550,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "customer_id",
                         "id" : "customer_id",
                         "ordinalPosition" : 1
@@ -1535,7 +1565,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "staff_id",
                         "id" : "staff_id",
                         "ordinalPosition" : 1
@@ -1549,7 +1579,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "payment_id",
@@ -1559,7 +1589,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "customer_id",
                     "id" : "customer_id",
@@ -1568,7 +1598,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "staff_id",
                     "id" : "staff_id",
@@ -1576,7 +1606,7 @@
                   },
                   {
                     "databaseType" : "java.lang.Integer",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "rental_id",
                     "id" : "rental_id",
@@ -1584,7 +1614,7 @@
                   },
                   {
                     "databaseType" : "java.math.BigDecimal",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "amount",
                     "id" : "amount",
@@ -1592,7 +1622,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "payment_date",
                     "id" : "payment_date",
@@ -1600,7 +1630,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -1608,7 +1638,8 @@
                   }
                 ],
                 "name" : "payment",
-                "id" : "payment"
+                "id" : "payment",
+                "enabled" : true
               },
               {
                 "foreignKeys" : [
@@ -1618,7 +1649,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "customer_id",
                         "foreignColumnName" : "customer_id",
                         "id" : "customer_id",
@@ -1635,7 +1666,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "inventory_id",
                         "foreignColumnName" : "inventory_id",
                         "id" : "inventory_id",
@@ -1652,7 +1683,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "staff_id",
                         "foreignColumnName" : "staff_id",
                         "id" : "staff_id",
@@ -1664,10 +1695,10 @@
                     "id" : "fk_rental_staff"
                   }
                 ],
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "rental_id",
                     "id" : "rental_id",
                     "ordinalPosition" : 1
@@ -1681,7 +1712,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "rental_id",
                         "id" : "rental_id",
                         "ordinalPosition" : 1
@@ -1696,21 +1727,21 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "rental_date",
                         "id" : "rental_date",
                         "ordinalPosition" : 1
                       },
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "customer_id",
                         "id" : "customer_id",
                         "ordinalPosition" : 3
                       },
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "inventory_id",
                         "id" : "inventory_id",
                         "ordinalPosition" : 2
@@ -1725,7 +1756,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "customer_id",
                         "id" : "customer_id",
                         "ordinalPosition" : 1
@@ -1740,7 +1771,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "inventory_id",
                         "id" : "inventory_id",
                         "ordinalPosition" : 1
@@ -1755,7 +1786,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "staff_id",
                         "id" : "staff_id",
                         "ordinalPosition" : 1
@@ -1769,7 +1800,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "rental_id",
@@ -1778,7 +1809,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "rental_date",
                     "id" : "rental_date",
@@ -1787,7 +1818,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "inventory_id",
                     "id" : "inventory_id",
@@ -1796,7 +1827,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "customer_id",
                     "id" : "customer_id",
@@ -1804,7 +1835,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "return_date",
                     "id" : "return_date",
@@ -1813,7 +1844,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "staff_id",
                     "id" : "staff_id",
@@ -1821,7 +1852,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -1829,7 +1860,8 @@
                   }
                 ],
                 "name" : "rental",
-                "id" : "rental"
+                "id" : "rental",
+                "enabled" : true
               },
               {
                 "foreignKeys" : [
@@ -1839,7 +1871,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "address_id",
                         "foreignColumnName" : "address_id",
                         "id" : "address_id",
@@ -1856,7 +1888,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "store_id",
                         "foreignColumnName" : "store_id",
                         "id" : "store_id",
@@ -1868,10 +1900,10 @@
                     "id" : "fk_staff_store"
                   }
                 ],
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "staff_id",
                     "id" : "staff_id",
                     "ordinalPosition" : 1
@@ -1885,7 +1917,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "staff_id",
                         "id" : "staff_id",
                         "ordinalPosition" : 1
@@ -1900,7 +1932,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "address_id",
                         "id" : "address_id",
                         "ordinalPosition" : 1
@@ -1915,7 +1947,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "store_id",
                         "id" : "store_id",
                         "ordinalPosition" : 1
@@ -1929,7 +1961,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "staff_id",
@@ -1938,7 +1970,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "first_name",
                     "id" : "first_name",
@@ -1946,7 +1978,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_name",
                     "id" : "last_name",
@@ -1955,7 +1987,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "address_id",
                     "id" : "address_id",
@@ -1963,7 +1995,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Blob",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "picture",
                     "id" : "picture",
@@ -1971,7 +2003,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "email",
                     "id" : "email",
@@ -1980,7 +2012,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "store_id",
                     "id" : "store_id",
@@ -1989,7 +2021,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "active",
                     "id" : "active",
@@ -1997,7 +2029,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "username",
                     "id" : "username",
@@ -2005,7 +2037,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "password",
                     "id" : "password",
@@ -2013,7 +2045,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -2021,7 +2053,8 @@
                   }
                 ],
                 "name" : "staff",
-                "id" : "staff"
+                "id" : "staff",
+                "enabled" : true
               },
               {
                 "foreignKeys" : [
@@ -2031,7 +2064,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "address_id",
                         "foreignColumnName" : "address_id",
                         "id" : "address_id",
@@ -2048,7 +2081,7 @@
                       {
                         "foreignDatabaseName" : "sakila",
                         "foreignSchemaName" : "sakila",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "manager_staff_id",
                         "foreignColumnName" : "staff_id",
                         "id" : "manager_staff_id",
@@ -2060,10 +2093,10 @@
                     "id" : "fk_store_staff"
                   }
                 ],
-                "expanded" : true,
+                "expanded" : false,
                 "primaryKeyColumns" : [
                   {
-                    "expanded" : true,
+                    "expanded" : false,
                     "name" : "store_id",
                     "id" : "store_id",
                     "ordinalPosition" : 1
@@ -2077,7 +2110,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "manager_staff_id",
                         "id" : "manager_staff_id",
                         "ordinalPosition" : 1
@@ -2092,7 +2125,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "store_id",
                         "id" : "store_id",
                         "ordinalPosition" : 1
@@ -2107,7 +2140,7 @@
                     "indexColumns" : [
                       {
                         "orderType" : "ASC",
-                        "expanded" : true,
+                        "expanded" : false,
                         "name" : "address_id",
                         "id" : "address_id",
                         "ordinalPosition" : 1
@@ -2121,7 +2154,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "autoIncrement" : true,
                     "name" : "store_id",
@@ -2131,7 +2164,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "manager_staff_id",
                     "id" : "manager_staff_id",
@@ -2140,7 +2173,7 @@
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "address_id",
                     "id" : "address_id",
@@ -2148,7 +2181,7 @@
                   },
                   {
                     "databaseType" : "java.sql.Timestamp",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_update",
                     "id" : "last_update",
@@ -2156,16 +2189,17 @@
                   }
                 ],
                 "name" : "store",
-                "id" : "store"
+                "id" : "store",
+                "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "isView" : true,
                 "columns" : [
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "actor_id",
                     "id" : "actor_id",
@@ -2173,7 +2207,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "first_name",
                     "id" : "first_name",
@@ -2181,7 +2215,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "last_name",
                     "id" : "last_name",
@@ -2189,7 +2223,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "film_info",
                     "id" : "film_info",
@@ -2197,16 +2231,17 @@
                   }
                 ],
                 "name" : "actor_info",
-                "id" : "actor_info"
+                "id" : "actor_info",
+                "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "isView" : true,
                 "columns" : [
                   {
                     "databaseType" : "java.lang.Integer",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "ID",
                     "id" : "ID",
@@ -2214,7 +2249,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "name",
                     "id" : "name",
@@ -2222,7 +2257,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "address",
                     "id" : "address",
@@ -2230,7 +2265,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "zip code",
                     "id" : "zip code",
@@ -2238,7 +2273,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "phone",
                     "id" : "phone",
@@ -2246,7 +2281,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "city",
                     "id" : "city",
@@ -2254,7 +2289,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "country",
                     "id" : "country",
@@ -2262,7 +2297,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "notes",
                     "id" : "notes",
@@ -2271,7 +2306,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "SID",
                     "id" : "SID",
@@ -2279,15 +2314,16 @@
                   }
                 ],
                 "name" : "customer_list",
-                "id" : "customer_list"
+                "id" : "customer_list",
+                "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "isView" : true,
                 "columns" : [
                   {
                     "databaseType" : "java.lang.Integer",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "FID",
                     "id" : "FID",
@@ -2295,7 +2331,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "title",
                     "id" : "title",
@@ -2303,7 +2339,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "description",
                     "id" : "description",
@@ -2311,7 +2347,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "category",
                     "id" : "category",
@@ -2319,7 +2355,7 @@
                   },
                   {
                     "databaseType" : "java.math.BigDecimal",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "price",
                     "id" : "price",
@@ -2327,7 +2363,7 @@
                   },
                   {
                     "databaseType" : "java.lang.Integer",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "length",
                     "id" : "length",
@@ -2335,7 +2371,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "enumConstants" : "G,PG,PG-13,R,NC-17",
                     "name" : "rating",
@@ -2344,7 +2380,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "actors",
                     "id" : "actors",
@@ -2352,15 +2388,16 @@
                   }
                 ],
                 "name" : "film_list",
-                "id" : "film_list"
+                "id" : "film_list",
+                "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "isView" : true,
                 "columns" : [
                   {
                     "databaseType" : "java.lang.Integer",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "FID",
                     "id" : "FID",
@@ -2368,7 +2405,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "title",
                     "id" : "title",
@@ -2376,7 +2413,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "description",
                     "id" : "description",
@@ -2384,7 +2421,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "category",
                     "id" : "category",
@@ -2392,7 +2429,7 @@
                   },
                   {
                     "databaseType" : "java.math.BigDecimal",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "price",
                     "id" : "price",
@@ -2400,7 +2437,7 @@
                   },
                   {
                     "databaseType" : "java.lang.Integer",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "length",
                     "id" : "length",
@@ -2408,7 +2445,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "enumConstants" : "G,PG,PG-13,R,NC-17",
                     "name" : "rating",
@@ -2417,7 +2454,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "actors",
                     "id" : "actors",
@@ -2425,15 +2462,16 @@
                   }
                 ],
                 "name" : "nicer_but_slower_film_list",
-                "id" : "nicer_but_slower_film_list"
+                "id" : "nicer_but_slower_film_list",
+                "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "isView" : true,
                 "columns" : [
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "category",
                     "id" : "category",
@@ -2441,7 +2479,7 @@
                   },
                   {
                     "databaseType" : "java.math.BigDecimal",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "total_sales",
                     "id" : "total_sales",
@@ -2449,15 +2487,16 @@
                   }
                 ],
                 "name" : "sales_by_film_category",
-                "id" : "sales_by_film_category"
+                "id" : "sales_by_film_category",
+                "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "isView" : true,
                 "columns" : [
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "store",
                     "id" : "store",
@@ -2465,7 +2504,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "manager",
                     "id" : "manager",
@@ -2473,7 +2512,7 @@
                   },
                   {
                     "databaseType" : "java.math.BigDecimal",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "total_sales",
                     "id" : "total_sales",
@@ -2481,16 +2520,17 @@
                   }
                 ],
                 "name" : "sales_by_store",
-                "id" : "sales_by_store"
+                "id" : "sales_by_store",
+                "enabled" : true
               },
               {
-                "expanded" : true,
+                "expanded" : false,
                 "isView" : true,
                 "columns" : [
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "ID",
                     "id" : "ID",
@@ -2498,7 +2538,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "name",
                     "id" : "name",
@@ -2506,7 +2546,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "address",
                     "id" : "address",
@@ -2514,7 +2554,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : true,
                     "name" : "zip code",
                     "id" : "zip code",
@@ -2522,7 +2562,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "phone",
                     "id" : "phone",
@@ -2530,7 +2570,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "city",
                     "id" : "city",
@@ -2538,7 +2578,7 @@
                   },
                   {
                     "databaseType" : "java.lang.String",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "country",
                     "id" : "country",
@@ -2547,7 +2587,7 @@
                   {
                     "databaseType" : "java.lang.Short",
                     "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
-                    "expanded" : true,
+                    "expanded" : false,
                     "nullable" : false,
                     "name" : "SID",
                     "id" : "SID",
@@ -2555,7 +2595,8 @@
                   }
                 ],
                 "name" : "staff_list",
-                "id" : "staff_list"
+                "id" : "staff_list",
+                "enabled" : true
               }
             ],
             "expanded" : true,

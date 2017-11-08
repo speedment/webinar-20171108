@@ -18,6 +18,7 @@ public final class Main {
         FilmManager films = app.getOrThrow(FilmManager.class);
         System.out.println("Film #: " + films.stream()
             .filter(Film.LENGTH.greaterThan(40))
+            .filter(Film.RATING.equal(Film.Rating.PG13))
             .count());
 
         app.stop();

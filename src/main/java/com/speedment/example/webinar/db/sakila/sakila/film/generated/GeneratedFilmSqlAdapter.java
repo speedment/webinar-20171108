@@ -5,9 +5,13 @@ import com.speedment.common.injector.annotation.ExecuteBefore;
 import com.speedment.common.injector.annotation.WithState;
 import com.speedment.example.webinar.db.sakila.sakila.film.Film;
 import com.speedment.example.webinar.db.sakila.sakila.film.FilmImpl;
+import com.speedment.example.webinar.db.sakila.sakila.film.generated.GeneratedFilm.Rating;
+import com.speedment.runtime.config.Project;
 import com.speedment.runtime.config.identifier.TableIdentifier;
+import com.speedment.runtime.core.component.ProjectComponent;
 import com.speedment.runtime.core.component.sql.SqlPersistenceComponent;
 import com.speedment.runtime.core.component.sql.SqlStreamSupplierComponent;
+import com.speedment.runtime.core.component.sql.SqlTypeMapperHelper;
 import com.speedment.runtime.core.exception.SpeedmentException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -27,6 +31,7 @@ import static com.speedment.runtime.core.internal.util.sql.ResultSetUtil.*;
 public abstract class GeneratedFilmSqlAdapter {
     
     private final TableIdentifier<Film> tableIdentifier;
+    private SqlTypeMapperHelper<String, Rating> ratingHelper;
     
     protected GeneratedFilmSqlAdapter() {
         this.tableIdentifier = TableIdentifier.of("sakila", "sakila", "film");
@@ -42,19 +47,19 @@ public abstract class GeneratedFilmSqlAdapter {
     protected Film apply(ResultSet resultSet) throws SpeedmentException {
         final Film entity = createEntity();
         try {
-            entity.setFilmId(             resultSet.getInt(1)         );
-            entity.setTitle(              resultSet.getString(2)      );
-            entity.setDescription(        resultSet.getString(3)      );
-            entity.setReleaseYear(        resultSet.getDate(4)        );
-            entity.setLanguageId(         resultSet.getShort(5)       );
-            entity.setOriginalLanguageId( getShort(resultSet, 6)      );
-            entity.setRentalDuration(     resultSet.getShort(7)       );
-            entity.setRentalRate(         resultSet.getBigDecimal(8)  );
-            entity.setLength(             getInt(resultSet, 9)        );
-            entity.setReplacementCost(    resultSet.getBigDecimal(10) );
-            entity.setRating(             resultSet.getString(11)     );
-            entity.setSpecialFeatures(    resultSet.getString(12)     );
-            entity.setLastUpdate(         resultSet.getTimestamp(13)  );
+            entity.setFilmId(             resultSet.getInt(1)                         );
+            entity.setTitle(              resultSet.getString(2)                      );
+            entity.setDescription(        resultSet.getString(3)                      );
+            entity.setReleaseYear(        resultSet.getDate(4)                        );
+            entity.setLanguageId(         resultSet.getShort(5)                       );
+            entity.setOriginalLanguageId( getShort(resultSet, 6)                      );
+            entity.setRentalDuration(     resultSet.getShort(7)                       );
+            entity.setRentalRate(         resultSet.getBigDecimal(8)                  );
+            entity.setLength(             getInt(resultSet, 9)                        );
+            entity.setReplacementCost(    resultSet.getBigDecimal(10)                 );
+            entity.setRating(             ratingHelper.apply(resultSet.getString(11)) );
+            entity.setSpecialFeatures(    resultSet.getString(12)                     );
+            entity.setLastUpdate(         resultSet.getTimestamp(13)                  );
         } catch (final SQLException sqle) {
             throw new SpeedmentException(sqle);
         }
@@ -63,5 +68,11 @@ public abstract class GeneratedFilmSqlAdapter {
     
     protected FilmImpl createEntity() {
         return new FilmImpl();
+    }
+    
+    @ExecuteBefore(RESOLVED)
+    void createHelpers(ProjectComponent projectComponent) {
+        final Project project = projectComponent.getProject();
+        ratingHelper = SqlTypeMapperHelper.create(project, Film.RATING, Film.class);
     }
 }
