@@ -10,3 +10,16 @@ buildNumber.properties
 
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
+
+**/nb-configuration.xml
+**/nbactions.xml
+**/settings.properties
+**/sonar-project.properties
+**.versionsBackup
+**/nbproject/
+**/target/
+**/.sonar
+**/.idea
+*.md5
+*.iml
+*~
