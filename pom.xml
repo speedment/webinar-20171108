@@ -21,7 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <speedment.version>3.0.16</speedment.version>
+        <speedment.enterprise.version>1.1.12</speedment.enterprise.version>
     </properties>
 
     <dependencies>
@@ -32,16 +32,21 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>com.speedment</groupId>
+            <groupId>com.speedment.enterprise</groupId>
+            <artifactId>datastore-runtime</artifactId>
+            <version>${speedment.enterprise.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.speedment.enterprise</groupId>
             <artifactId>runtime</artifactId>
-            <version>${speedment.version}</version>
+            <version>${speedment.enterprise.version}</version>
             <type>pom</type>
         </dependency>
 
         <dependency>
-            <groupId>com.speedment.plugins</groupId>
+            <groupId>com.speedment.enterprise.plugins</groupId>
             <artifactId>json-stream</artifactId>
-            <version>${speedment.version}</version>
+            <version>${speedment.enterprise.version}</version>
         </dependency>
 
         <dependency>
@@ -58,13 +63,14 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.speedment</groupId>
-                <artifactId>speedment-maven-plugin</artifactId>
-                <version>${speedment.version}</version>
+                <groupId>com.speedment.enterprise</groupId>
+                <artifactId>speedment-enterprise-maven-plugin</artifactId>
+                <version>${speedment.enterprise.version}</version>
 
                 <configuration>
                     <components>
-                        <component>com.speedment.plugins.enums.EnumGeneratorBundle</component>
+                        <component>com.speedment.enterprise.plugins.enums.EnumSerializerBundle</component>
+                        <component>com.speedment.enterprise.datastore.tool.DataStoreToolBundle</component>
                     </components>
                 </configuration>
             </plugin>
@@ -76,4 +82,25 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>speedment-enterprise</id>
+            <name>Speedment Enterprise Repositories</name>
+            <url>https://repo.speedment.com/nexus/content/repositories/releases/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>speedment-enterprise</id>
+            <name>Speedment Enterprise Repositories</name>
+            <url>https://repo.speedment.com/nexus/content/repositories/releases/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 </project>

@@ -884,7 +884,6 @@
                   {
                     "databaseType" : "java.lang.String",
                     "expanded" : false,
-                    "typeMapper" : "com.speedment.plugins.enums.StringToEnumTypeMapper",
                     "nullable" : true,
                     "enumConstants" : "G,PG,PG-13,R,NC-17",
                     "autoIncrement" : false,

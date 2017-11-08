@@ -984,7 +984,6 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                  {",
             "                    \"databaseType\" : \"java.lang.String\",",
             "                    \"expanded\" : false,",
-            "                    \"typeMapper\" : \"com.speedment.plugins.enums.StringToEnumTypeMapper\",",
             "                    \"nullable\" : true,",
             "                    \"enumConstants\" : \"G,PG,PG-13,R,NC-17\",",
             "                    \"autoIncrement\" : false,",
@@ -1006,13 +1005,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                  {",
             "                    \"databaseType\" : \"java.sql.Timestamp\",",
             "                    \"expanded\" : false,",
-            "                    \"nullable\" : false,"
+            "                    \"nullable\" : false,",
+            "                    \"name\" : \"last_update\","
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart9(StringBuilder sb) {
         Stream.of(
-            "                    \"name\" : \"last_update\",",
             "                    \"id\" : \"last_update\",",
             "                    \"ordinalPosition\" : 13,",
             "                    \"enabled\" : true",
@@ -1112,13 +1111,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                    ],",
             "                    \"id\" : \"idx_fk_film_id\"",
             "                  }",
-            "                ],"
+            "                ],",
+            "                \"isView\" : false,"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart10(StringBuilder sb) {
         Stream.of(
-            "                \"isView\" : false,",
             "                \"columns\" : [",
             "                  {",
             "                    \"databaseType\" : \"java.lang.Integer\",",
@@ -1218,13 +1217,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                      },",
             "                      {",
             "                        \"orderType\" : \"ASC\",",
-            "                        \"expanded\" : false,"
+            "                        \"expanded\" : false,",
+            "                        \"name\" : \"category_id\","
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart11(StringBuilder sb) {
         Stream.of(
-            "                        \"name\" : \"category_id\",",
             "                        \"id\" : \"category_id\",",
             "                        \"ordinalPosition\" : 2",
             "                      }",
@@ -1324,13 +1323,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                        \"name\" : \"description\",",
             "                        \"id\" : \"description\",",
             "                        \"ordinalPosition\" : 2",
-            "                      }"
+            "                      }",
+            "                    ],"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart12(StringBuilder sb) {
         Stream.of(
-            "                    ],",
             "                    \"id\" : \"idx_title_description\"",
             "                  }",
             "                ],",
@@ -1430,13 +1429,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                  },",
             "                  {",
             "                    \"expanded\" : false,",
-            "                    \"unique\" : false,"
+            "                    \"unique\" : false,",
+            "                    \"name\" : \"idx_fk_film_id\","
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart13(StringBuilder sb) {
         Stream.of(
-            "                    \"name\" : \"idx_fk_film_id\",",
             "                    \"indexColumns\" : [",
             "                      {",
             "                        \"orderType\" : \"ASC\",",
@@ -1536,13 +1535,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                        \"name\" : \"language_id\",",
             "                        \"id\" : \"language_id\",",
             "                        \"ordinalPosition\" : 1",
-            "                      }"
+            "                      }",
+            "                    ],"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart14(StringBuilder sb) {
         Stream.of(
-            "                    ],",
             "                    \"id\" : \"PRIMARY\"",
             "                  }",
             "                ],",
@@ -1642,13 +1641,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                    \"ordinalPosition\" : 1",
             "                  }",
             "                ],",
-            "                \"indexes\" : ["
+            "                \"indexes\" : [",
+            "                  {"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart15(StringBuilder sb) {
         Stream.of(
-            "                  {",
             "                    \"expanded\" : false,",
             "                    \"unique\" : true,",
             "                    \"name\" : \"PRIMARY\",",
@@ -1748,13 +1747,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                    \"ordinalPosition\" : 4",
             "                  },",
             "                  {",
-            "                    \"databaseType\" : \"java.math.BigDecimal\","
+            "                    \"databaseType\" : \"java.math.BigDecimal\",",
+            "                    \"expanded\" : false,"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart16(StringBuilder sb) {
         Stream.of(
-            "                    \"expanded\" : false,",
             "                    \"nullable\" : false,",
             "                    \"name\" : \"amount\",",
             "                    \"id\" : \"amount\",",
@@ -1854,13 +1853,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                        \"orderType\" : \"ASC\",",
             "                        \"expanded\" : false,",
             "                        \"name\" : \"rental_id\",",
-            "                        \"id\" : \"rental_id\","
+            "                        \"id\" : \"rental_id\",",
+            "                        \"ordinalPosition\" : 1"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart17(StringBuilder sb) {
         Stream.of(
-            "                        \"ordinalPosition\" : 1",
             "                      }",
             "                    ],",
             "                    \"id\" : \"PRIMARY\"",
@@ -1960,13 +1959,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                    \"id\" : \"rental_date\",",
             "                    \"ordinalPosition\" : 2",
             "                  },",
-            "                  {"
+            "                  {",
+            "                    \"databaseType\" : \"java.lang.Integer\","
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart18(StringBuilder sb) {
         Stream.of(
-            "                    \"databaseType\" : \"java.lang.Integer\",",
             "                    \"typeMapper\" : \"com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper\",",
             "                    \"expanded\" : false,",
             "                    \"nullable\" : false,",
@@ -2066,13 +2065,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                    \"name\" : \"PRIMARY\",",
             "                    \"indexColumns\" : [",
             "                      {",
-            "                        \"orderType\" : \"ASC\","
+            "                        \"orderType\" : \"ASC\",",
+            "                        \"expanded\" : false,"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart19(StringBuilder sb) {
         Stream.of(
-            "                        \"expanded\" : false,",
             "                        \"name\" : \"staff_id\",",
             "                        \"id\" : \"staff_id\",",
             "                        \"ordinalPosition\" : 1",
@@ -2172,13 +2171,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                    \"name\" : \"store_id\",",
             "                    \"id\" : \"store_id\",",
             "                    \"ordinalPosition\" : 7",
-            "                  },"
+            "                  },",
+            "                  {"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart20(StringBuilder sb) {
         Stream.of(
-            "                  {",
             "                    \"databaseType\" : \"java.lang.Integer\",",
             "                    \"typeMapper\" : \"com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper\",",
             "                    \"expanded\" : false,",
@@ -2278,13 +2277,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                    ],",
             "                    \"id\" : \"idx_unique_manager\"",
             "                  },",
-            "                  {"
+            "                  {",
+            "                    \"expanded\" : false,"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart21(StringBuilder sb) {
         Stream.of(
-            "                    \"expanded\" : false,",
             "                    \"unique\" : true,",
             "                    \"name\" : \"PRIMARY\",",
             "                    \"indexColumns\" : [",
@@ -2384,13 +2383,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                    \"nullable\" : false,",
             "                    \"name\" : \"last_name\",",
             "                    \"id\" : \"last_name\",",
-            "                    \"ordinalPosition\" : 3"
+            "                    \"ordinalPosition\" : 3",
+            "                  },"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart22(StringBuilder sb) {
         Stream.of(
-            "                  },",
             "                  {",
             "                    \"databaseType\" : \"java.lang.String\",",
             "                    \"expanded\" : false,",
@@ -2490,13 +2489,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "              {",
             "                \"expanded\" : false,",
             "                \"isView\" : true,",
-            "                \"columns\" : ["
+            "                \"columns\" : [",
+            "                  {"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart23(StringBuilder sb) {
         Stream.of(
-            "                  {",
             "                    \"databaseType\" : \"java.lang.Integer\",",
             "                    \"expanded\" : false,",
             "                    \"nullable\" : true,",
@@ -2596,13 +2595,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                  },",
             "                  {",
             "                    \"databaseType\" : \"java.lang.String\",",
-            "                    \"expanded\" : false,"
+            "                    \"expanded\" : false,",
+            "                    \"nullable\" : false,"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart24(StringBuilder sb) {
         Stream.of(
-            "                    \"nullable\" : false,",
             "                    \"name\" : \"category\",",
             "                    \"id\" : \"category\",",
             "                    \"ordinalPosition\" : 4",
@@ -2702,13 +2701,13 @@ public class GeneratedWebinarMetadata extends AbstractApplicationMetadata {
             "                \"name\" : \"sales_by_store\",",
             "                \"id\" : \"sales_by_store\",",
             "                \"enabled\" : true",
-            "              },"
+            "              },",
+            "              {"
         ).forEachOrdered(sb::append);
     }
     
     private static void initPart25(StringBuilder sb) {
         Stream.of(
-            "              {",
             "                \"expanded\" : false,",
             "                \"isView\" : true,",
             "                \"columns\" : [",

@@ -3,15 +3,17 @@ package com.speedment.example.webinar.db.sakila.sakila.film.generated;
 import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.example.webinar.db.sakila.sakila.film.Film;
 import com.speedment.example.webinar.db.sakila.sakila.language.Language;
-import com.speedment.runtime.config.Column;
 import com.speedment.runtime.config.identifier.ColumnIdentifier;
 import com.speedment.runtime.config.identifier.TableIdentifier;
 import com.speedment.runtime.core.manager.Manager;
 import com.speedment.runtime.core.util.OptionalUtil;
-import com.speedment.runtime.field.*;
+import com.speedment.runtime.field.ComparableField;
+import com.speedment.runtime.field.ComparableForeignKeyField;
+import com.speedment.runtime.field.IntField;
+import com.speedment.runtime.field.ShortField;
+import com.speedment.runtime.field.ShortForeignKeyField;
+import com.speedment.runtime.field.StringField;
 import com.speedment.runtime.typemapper.TypeMapper;
-
-import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.sql.Date;
 import java.sql.Timestamp;
@@ -147,39 +149,12 @@ public interface GeneratedFilm {
      * This Field corresponds to the {@link Film} field that can be obtained
      * using the {@link Film#getRating()} method.
      */
-    EnumField<Film, String, Rating> RATING = EnumField.create(
+    StringField<Film, String> RATING = StringField.create(
         Identifier.RATING,
         o -> OptionalUtil.unwrap(o.getRating()),
         Film::setRating,
-        new TypeMapper<String, Rating>() {
-            @Override
-            public String getLabel() {
-                return "String to Rating Mapper";
-            }
-            
-            @Override
-            public Category getJavaTypeCategory(Column column) {
-                return Category.ENUM;
-            }
-            
-            @Override
-            public Type getJavaType(Column column) {
-                return Rating.class;
-            }
-            
-            @Override
-            public Rating toJavaType(Column column, Class<?> clazz, String value) {
-                return value == null ? null : Rating.fromDatabase(value);
-            }
-            
-            @Override
-            public String toDatabaseType(Rating rating) {
-                return rating == null ? null : rating.toDatabase();
-            }
-        },
-        Rating::toDatabase,
-        Rating::fromDatabase,
-        Rating.class
+        TypeMapper.identity(),
+        false
     );
     /**
      * This Field corresponds to the {@link Film} field that can be obtained
@@ -291,7 +266,7 @@ public interface GeneratedFilm {
      * 
      * @return the rating of this Film
      */
-    Optional<Rating> getRating();
+    Optional<String> getRating();
     
     /**
      * Returns the specialFeatures of this Film. The specialFeatures field
@@ -407,7 +382,7 @@ public interface GeneratedFilm {
      * @param rating to set of this Film
      * @return       this Film instance
      */
-    Film setRating(Rating rating);
+    Film setRating(String rating);
     
     /**
      * Sets the specialFeatures of this Film. The specialFeatures field
@@ -494,59 +469,6 @@ public interface GeneratedFilm {
         @Override
         public TableIdentifier<Film> asTableIdentifier() {
             return this.tableIdentifier;
-        }
-    }
-    
-    enum Rating {
-        
-        G    ("G", 0),
-        NC17 ("NC-17", 1),
-        PG   ("PG", 2),
-        PG13 ("PG-13", 3),
-        R    ("R", 4);
-        
-        private final String databaseName;
-        private final int databaseOrdinal;
-        
-        Rating(String databaseName, int databaseOrdinal) {
-            this.databaseName    = databaseName;
-            this.databaseOrdinal = databaseOrdinal;
-        }
-        
-        public static Rating fromDatabase(String databaseName) {
-            if (databaseName == null) return null;
-            switch (databaseName) {
-                case "G" : return G;
-                case "NC-17" : return NC17;
-                case "PG" : return PG;
-                case "PG-13" : return PG13;
-                case "R" : return R;
-                default : throw new UnsupportedOperationException(
-                    "Unknown enum constant '" + databaseName + "'."
-                );
-            }
-        }
-        
-        public static Rating fromDatabaseOrdinal(Integer databaseOrdinal) {
-            if (databaseOrdinal == null) return null;
-            switch (databaseOrdinal) {
-                case 0 : return G;
-                case 1 : return NC17;
-                case 2 : return PG;
-                case 3 : return PG13;
-                case 4 : return R;
-                default : throw new UnsupportedOperationException(
-                    "Unknown enum ordinal '" + databaseOrdinal + "'."
-                );
-            }
-        }
-        
-        public String toDatabase() {
-            return databaseName;
-        }
-        
-        public int toDatabaseOrdinal() {
-            return databaseOrdinal;
         }
     }
 }
