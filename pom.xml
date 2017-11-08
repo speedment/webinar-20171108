@@ -39,6 +39,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.speedment.plugins</groupId>
+            <artifactId>json-stream</artifactId>
+            <version>${speedment.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>

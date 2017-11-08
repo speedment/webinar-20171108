@@ -3,6 +3,8 @@ package com.speedment.example.webinar;
 import com.speedment.example.webinar.db.WebinarApplication;
 import com.speedment.example.webinar.db.WebinarApplicationBuilder;
 import com.speedment.example.webinar.db.sakila.sakila.film.FilmManager;
+import com.speedment.plugins.json.JsonBundle;
+import com.speedment.plugins.json.JsonComponent;
 import com.speedment.runtime.core.ApplicationBuilder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
@@ -21,6 +23,7 @@ public class Main {
     WebinarApplication application() {
         return new WebinarApplicationBuilder()
             .withLogging(ApplicationBuilder.LogType.STREAM)
+            .withBundle(JsonBundle.class)
             .withPassword("sakila")
             .build();
     }
@@ -28,6 +31,11 @@ public class Main {
     @Bean
     FilmManager films(WebinarApplication app) {
         return app.getOrThrow(FilmManager.class);
+    }
+
+    @Bean
+    JsonComponent jsonComponent(WebinarApplication app) {
+        return app.getOrThrow(JsonComponent.class);
     }
 
     public static void main(String... args) {
